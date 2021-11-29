@@ -87,8 +87,8 @@ public class MoneyTransferTest {
         var firstCardBalanceNew = afterTransfer.getFirstCardBalance();
         var secondCardBalanceNew = afterTransfer.getSecondCardBalance();
 
-        int expectedFirst = firstCardBalance + money;
-        int expectedSecond = secondCardBalance - money;
+        int expectedFirst = firstCardBalance;
+        int expectedSecond = secondCardBalance;
         int actualFirst = firstCardBalanceNew;
         int actualSecond = secondCardBalanceNew;
 
